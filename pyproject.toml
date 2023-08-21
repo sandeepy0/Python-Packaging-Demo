@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doraemonsay"
+version = "1.0.0"
+
+[project.scripts]
+doraemonsays = "doraemonsay.__main__:main"
+doraemonsays_setup = "doraemonsay.custom_setup:main"
+
+
+[tool.setuptools]
+include-package-data = true
